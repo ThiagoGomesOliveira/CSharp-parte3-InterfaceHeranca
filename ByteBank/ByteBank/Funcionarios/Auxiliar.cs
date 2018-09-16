@@ -11,7 +11,17 @@ namespace ByteBank.Funcionarios
 
         public Auxiliar(string cpf) : base(cpf,2000)
         {
-            this.Cpf = cpf;
+         
+        }
+
+        public override void AumentarSalario()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override double GetBonificacao()
+        {
+            throw new NotImplementedException();
         }
     }
 }

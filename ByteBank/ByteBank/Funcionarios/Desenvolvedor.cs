@@ -12,5 +12,15 @@ namespace ByteBank.Funcionarios
         {
 
         }
+
+        public override void AumentarSalario()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override double GetBonificacao()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
