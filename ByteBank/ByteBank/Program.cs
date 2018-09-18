@@ -27,12 +27,16 @@ namespace ByteBank
 
         public static void LogarSistema()
         {
+            ParceiroComercial parceiroComercial = new ParceiroComercial();
+            parceiroComercial.Senha = "123";
+
             Diretor diretor = new Diretor("000.000.000-00");
             diretor.Nome = "Juliana";
             diretor.Senha = "1234";
 
             SistemaInterno sistemaInterno = new SistemaInterno();
             sistemaInterno.Logar(diretor,"123");
+            sistemaInterno.Logar(parceiroComercial,"123");
 
         }
 
